@@ -8,10 +8,9 @@ RUN apk add --update nodejs
 RUN apk add --update npm
 RUN npm install express
 RUN npm install express-handlebars
-RUN npm install nodemon
 
 COPY . .
 
 EXPOSE 5050
 
-CMD ["npm", "start"]
+CMD node index.js
