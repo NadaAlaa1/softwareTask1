@@ -2,7 +2,7 @@ FROM node:14-alpine
 
 WORKDIR /app
 
-COPY index.js package*.json ./templates ./database .
+COPY index.js package*.json ./templates ./database ./
 
 RUN apk add --update nodejs
 RUN apk add --update npm
